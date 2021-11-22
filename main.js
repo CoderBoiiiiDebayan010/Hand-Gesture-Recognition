@@ -43,20 +43,20 @@ function gotResult(error, results) {
     console.error(error);
   } else {
     console.log(results);
-    document.getElementById("result_emotion_name").innerHTML = results[0].label;
+    document.getElementById("result_gesture_name").innerHTML = results[0].label;
     prediction_1 = results[0].label;
     speak();
     if(results[0].label == "Victory")
     {
-      document.getElementById("update_emoji").innerHTML = "&#128522;";
+      document.getElementById("update_gesture").innerHTML = "&#128522;";
     }
     if(results[0].label == "Amazing")
     {
-      document.getElementById("update_emoji").innerHTML = "&#9996;";
+      document.getElementById("update_gesture").innerHTML = "&#9996;";
     }
     if(results[0].label == "Best")
     {
-      document.getElementById("update_emoji").innerHTML = "&#128077;";
+      document.getElementById("update_gesture").innerHTML = "&#128077;";
     }
 
   }
